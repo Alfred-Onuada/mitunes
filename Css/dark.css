@@ -1,0 +1,6 @@
+@import url('../Fonts/MTNBrighterSans/MTNBrighterSans.css');
+
+*{
+    font-family: roboto, MTNBRighterSans-Regular;
+    box-sizing: border-box;
+}

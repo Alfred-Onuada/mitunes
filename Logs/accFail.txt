@@ -1,0 +1,2 @@
+ account creation failed, Username was already taken on Thu, 03 Dec 2020 18:09:06
+ account creation failed, Username was already taken on Thu, 03 Dec 2020 18:14:39

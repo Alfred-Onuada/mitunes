@@ -1,0 +1,3366 @@
+@import url('../Fonts/MTNBrighterSans/MTNBrighterSans.css');
+@import url('../Fonts/Google_Product_Sans/Google_Product_Sans.css');
+
+
+*{
+    font-family: MTNBRighterSans-Regular, Product_Sans_Regular, 'Segoe UI';
+    box-sizing: border-box;
+}
+
+@media (max-width: 450px) {
+    .header{
+        height: 17vw;
+        width: 100%;
+        background-color: whitesmoke;
+        position: fixed;
+        z-index: 10000;
+        max-height: 17vw;
+        overflow: hidden;
+    }
+    .header2{
+        height: fit-content;
+        width: 100%;
+        padding: 0px 0px 10px 0px;
+        background-color: whitesmoke;
+        position: fixed;
+        z-index: 10000;
+    }
+    .seperate{
+        height: 17vw;
+    }
+    .flagicon{
+        height: 20px;
+        width: 30px;
+        margin: 0px 10px -4px 0px;
+        border-radius: 5px;
+    }
+    .header .row{
+        height: 100%;
+        margin: 0px !important;
+    }
+    .h{
+        margin: 15px 0px 0px 0px;
+    }
+    .nav{
+            margin: 15px 0px 0px 0px;
+    }
+    .nn{
+        font-size: 7vw;
+        margin: 0px;
+        color: black;
+    }
+    .navf{
+            font-size: 6vw;
+            float: right;
+            padding: 5px;
+    }
+    .dropt{
+        font-size: 4vw;
+    }
+    .altdropt{
+        color: black;
+    }
+    .show{
+        margin: 0px 10px 0px 10px;
+    }
+    .clear_space{
+        margin: 0px !important;
+        height: 100%;
+    }
+    .sort{
+        float: right;
+        margin: 0px 10px 0px 0px;
+    }
+    .optt{
+        margin: -15px 0px 0px 0px;
+    }
+    .optt a{
+        font-size: 4vw;
+        color: black;
+    }
+    #optt_text{
+        font-size: 4vw;
+        color: black;
+        margin: -23px 0px 10px 25px;
+    }
+    .opt{
+        margin: 10px 0px 0px 10px;
+    }
+    .d1{
+        margin: 0px 0px 10px 0px;
+    }
+    .footer{
+        height: fit-content;
+        width: 100%;
+        padding: 10px 0px 0px 0px;
+        background-color: silver;
+    }
+    .footer .row{
+        margin: 0px !important;
+    }
+    .so{
+        margin: 0px;
+    }
+    .si{
+        font-size: 5.5vw;
+        padding: 0px 5px 0px 5px;
+        color: black;
+    }
+    .help{
+        margin: -10px 0px 0px 0px;
+        text-align: right;
+    }
+    .helpt{
+        font-size: 4vw;
+        color: black;
+    }
+    .cr{
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+    }
+    .crb{
+        font-size: 5vw;
+        margin: 0px;
+    }
+    .helpdesk{
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+    }
+    .hdit{
+        font-size: 4vw;
+    }
+    .hdform{
+        margin: 30px 0px 10px 0px;
+    }
+    .hdfb{
+        width: 97%;
+        height: 300px;
+        padding: 5px 0px 0px 10px;
+    }
+    .hdbtn{
+        background-color: dimgray !important;
+    }
+    .hdlt{
+        font-size: 4vw;
+        margin: 10px 0px 15px 0px;
+    }
+    .gs{
+        min-height: 500px;
+    }
+    .gsbtn{
+        border-radius: 20px !important;
+        text-transform: none !important;
+    }
+    .hdfti{
+        font-size: 4vw;
+    }
+    .dita{
+        width: 97%;
+        height: 40px;
+        padding: 5px 0px 0px 10px;
+        margin: 0px 0px 10px 0px;
+    }
+    .sorthot{
+        float: right;
+        margin: 0px 10px 0px 0px;
+    }
+    .hotopt{
+        margin: 10px 0px 0px 10px;
+    }
+    .sorttop{
+        float: right;
+        margin: 0px 10px 0px 0px;
+    }
+    .topopt{
+            margin: 10px 0px 0px 10px;
+    }
+    .hotb{
+        min-height: 630px;
+        height: fit-content;
+        width: 100%;
+    }
+    .indhotc{
+        margin: 10px 0px 5px 0px;
+    }
+    .card{
+        height: 310px;
+        margin: 0px !important;
+    }
+    .topwb{
+        width: 100%;
+        height: fit-content;
+    }
+    .front, .back{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear;
+    }
+    .front{
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .back{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .back-content{
+        text-align: center;
+        width: 100%;
+    }
+    .card:hover > .front{
+        transform: perspective(600px) rotateY(-180deg);
+    }
+    .card:hover > .back{
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .fbc{
+        padding: 10px 0px 10px 0px;
+        text-align: left;
+    }
+    .hbsn{
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .hban{
+        font-size: 4vw;
+        text-align: center;
+        margin: 0px;
+        opacity: .7;
+    }
+    .sihb{
+        text-align: center;
+        margin: 30px 0px 60px 0px !important;
+    }
+    .hbsib_row{
+        margin: 0px !important;
+        padding: 0px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hbsib{
+        height: 40px;
+        border-radius: 50%;
+        width: 40px;
+        transition: backgroundColor .7s;
+    }
+    .siself{
+        margin: 10px;
+        font-size: 5vw;
+    }
+    .hbsib:hover{
+        background-color: darkgrey;
+    }
+    .hbsib:hover > .makeBlack{
+        color: aliceblue;
+    }
+    .hbaln{
+        font-size: 5vw;
+        text-align: center;
+        margin: 10px;
+        opacity: .7;
+    }
+    .hbscn{
+        margin: 0px;
+        font-size: 3.2vw;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .hbubn, .hbuon{
+        font-size: 3.2vw;
+        text-align: left;
+        margin: 7px 0px;
+        padding-left: 10px;
+    }
+    .hbuonm{
+        font-style: normal;
+    }
+    .hotPreloader{
+        height: 570px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+    }
+    .simg{
+        margin: 0px 0px 5px 0px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+    }
+    .simgself{
+        height: 200px;
+        width: 90%;
+        border-radius: 10px;
+    }
+    .sinfo{
+        text-align: center;
+        padding: 0px 5px;
+    }
+    .s{
+        font-size: 4vw;
+        margin: 0px;
+        text-transform: uppercase;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .a{
+        font-size: 3.5vw;
+        margin: -5px 0px -5px 0px;
+    }
+    .feat{
+        font-size: 3.5vw;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 10px 0px;
+    }
+    .rank{
+        font-size: 4vw;
+        background-color: yellow;
+        height: 25px;
+        width: fit-content;
+        padding: 5px 5px 0px 10px;
+        margin: -200px 0px 0px 0px;
+        position: relative;
+        float: right;
+        opacity: 1;
+    }
+    .gi{
+        margin: 0px 10px 0px 0px;
+        font-size: 4vw;
+        color: slategray;
+        animation-name: rotate;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: jump-start;
+    }
+    @keyframes rotate {
+        from {
+            transform: rotateZ(0deg);
+        }
+
+        to {
+            transform: rotateZ(359deg);
+        }
+    }
+    .accountopt{
+        margin: 10px 0px 0px 10px;
+    }
+    .ti{
+        margin: 0px 10px 0px 0px;
+        font-size: 4vw;
+        color: slategray;
+    }
+    .regbody{
+        height: fit-content;
+        width: 100%;
+    }
+    .regform{
+        text-align: center;
+        height: fit-content;
+        width: 90%;
+        margin: 0px 0px 10px 15px;
+    }
+    .rfnb{
+        margin: 0px !important;
+    }
+    .gender{
+        height: fit-content;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    .gencol{
+        margin: 0px 20px 0px 20px!important;
+    }
+    .tandc{
+        height: fit-content;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    .sedit{
+        color: black;
+    }
+    .cedit{
+        color: black;
+        font-size: 4vw !important;
+    }
+    .cedit::before{
+        border-bottom: 2px solid darkslategray !important;
+        border-right: 2px solid darkslategray !important;
+    }
+    .sedit::before{
+        border: 2px solid darkslategray !important;
+    }
+    .sedit::after{
+        border: 2px solid darkslategray !important;
+        background-color: darkslategray !important;
+    }
+    .regformbtn{
+        height: 40px;
+        width: fit-content;
+        padding: 0px 10px 0px 10px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: lightslategrey;
+    }
+    .regformbtn:focus{
+        background-color: lightslategrey !important;
+    }
+    .formerror{
+        width: 90%;
+        background-color: red;
+        border-radius: 20px;
+        font-size: 4vw;
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .lngtextfont{
+        font-size: 3.5vw !important;
+    }
+    .formerrorani{
+        height: 40px;
+        animation: shake .5s 1 linear;
+        padding: 7px 0px 0px 0px;
+    }
+    .formsuccess{
+        background-color: lightgreen !important;
+    }
+    @keyframes shake{
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    .mi{
+        margin: 0 !important;
+    }
+    .rfn{
+        font-size: 4vw;
+        margin: 5px 0px -25px 0px;
+        color: slategray;
+        float: left;
+    }
+    .rfnbl{
+        margin: 0px 0px 17px 0px !important;
+        width: 93% !important;
+    }
+    .rfnbl:focus, .rfnb:focus, .rpb:focus{
+        border-bottom: 1px solid slategray !important;
+        box-shadow: 0 1px 0 0 slategrey !important;
+    }
+    .rfnl{
+        font-size: 4vw;
+        margin: 5px 0px -25px 10px;
+        color: slategray;
+        float: left;
+    }
+    .rp{
+        font-size: 3.5vw !important;
+        margin: 10px 0px -25px 0px;
+        color: slategray;
+    }
+    .frow{
+        text-align: left;
+    }
+    .rpb{
+        margin: 5px 0px 0px 0px !important;
+        width: 90% !important;
+    }
+    .ei{
+        color: darkslategray;
+        margin: -20px 0px 0px 0px;
+        float: right;
+    }
+    .active{
+        color: slategray !important;
+    }
+    .fhead{
+        text-align: center;
+        font-size: 5vw;
+        margin-bottom: 20px;
+    }
+    .albumFull{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .albDet{
+        max-height: 160px;
+        overflow: hidden;
+        margin: 0px !important;
+    }
+    .aDpic{
+        height: 160px;
+        width: 100%;
+        transition: width .5s;
+    }
+    .aDIself{
+        height: 100%;
+        width: 100%;
+    }
+    .aDInfo{
+        background-color: black;
+        opacity: .7;
+        margin: -40px 0px 0px 0px;
+        height: 40px;
+        transition: margin .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aDName{
+        margin: 0px;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 5.7vw;
+        display: inline-block;
+    }
+    .fall_margin{
+        margin: 0px !important;
+    }
+    .half_it{
+        width: 30% !important;
+        padding: 0px !important;
+    }
+    .aDFullInfo{
+        overflow: scroll;
+        max-height: 160px;
+    }
+    .aDFI1{
+        font-size: 5vw;
+        margin: 7px 0px;
+    }
+    .aDFI{
+        font-size: 4vw;
+        margin: 7px 0px;
+        color: slategrey;
+    }
+    .trackNo_new{
+        font-size: 4.5vw;
+        padding: 0px 0px 0px 0px !important;
+    }
+    .move_a_bit{
+        margin: 0px 0px 0px -10px;
+    }
+    .spinner_new{
+        margin: -3px 0px 0px -13px !important;
+    }
+    .album_controls{
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+        background-color: rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .album_controls span{
+        display: inline-block;
+    }
+    .bigger_container{
+        width: fit-content;
+    }
+    .container_for_play_pause{
+        height: 39px;
+        padding: 0px 0px 0px 10px;
+        width: fit-content;
+        transition: width .5s;
+        background: black;
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        float: right;
+    }
+    .actual_text{
+        float: left;
+        margin: 0px;
+        font-size: 4.2vw;
+        color: whitesmoke;
+    }
+    .ppicons{
+        color: whitesmoke;
+        margin: 0px 5px 0px 3px;
+        font-size: 6vw !important;
+    }
+    .extracon{
+        padding: 0px 2.7vw;
+        font-size: 7vw;
+    }
+    .eclike{
+        opacity: .5;
+    }
+    .ssinalbum{
+        margin: -5px 17px 10px 0px !important;
+        color: whitesmoke;
+    }
+
+
+
+    .songbody{
+        height: fit-content;
+        width: 100%;
+        background: lightgrey;
+        border-radius: 5px 5px 0px 0px;
+        margin: 0px 0px -20px 0px;
+    }
+    .sbimg{
+        margin: 5px 0px 0px 0px;
+    }
+    .sbiself{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+    .sbsn{
+        font-size: 4.5vw;
+        margin: 10px 0px 0px -15px;
+    }
+    .sbarn{
+        font-size: 4vw;
+        margin: 5px 0px 0px -5px;
+        color: slategray;
+    }
+    .profilebody{
+        height: fit-content;
+        width: 100%;
+        margin-top: -5px;
+    }
+    .setbody{
+        margin: 20px 0px 0px 0px;
+        text-align: right;
+    }
+    .setbi{
+        font-size: 7vw !important;
+        color: black;
+        position: sticky;
+        z-index: 5000;
+    }
+    .setbior{
+        animation: setrotate .5s 1 linear;
+    }
+    @keyframes setrotate{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(359deg);
+        }
+    }
+    .setbicr{
+        animation: setrotatec .5s 1 linear;
+    }
+    @keyframes setrotatec {
+        from{
+            transform: rotateZ(359deg);
+        }
+        to{
+            transform: rotateZ(0deg);
+        }
+    }
+
+
+
+    .settingsMenu{
+        height: calc(100% - 122px);
+        width: 0px;
+        background-color: gray;
+        right: 0;
+        position: absolute;
+        z-index: 3500;
+        border-radius: 5px 0px 0px 5px;
+        transition: width .5s;
+        overflow: scroll;
+    }
+    .settingsText{
+        color: whitesmoke;
+        font-size: 4.7vw;
+        margin: 18px 20px;
+    }
+    .sNopt{
+        width: 100%;
+        height: fit-content;
+    }
+    .sNOtext{
+        margin: 15px 0px 15px 20px;
+        font-size: 4.5vw;
+        color: whitesmoke;
+    }
+    .sNOdivider{
+        width: 95%;
+        margin: 0px 0px 0px 2.5%;
+    }
+    .sortNav{
+        float: right;
+        font-size: 4vw !important;
+        margin: 5px 25px 0px 0px;
+    }
+    .sNOStext{
+        font-size: 4vw;
+        margin: 15px 0px 15px 28px;
+        color: whitesmoke;
+    }
+    .sNOStext a{
+        color: inherit;
+    }
+    .sNOSdivider{
+        width: 92%;
+        margin: 0px 0px 0px 7%;
+    }
+    #sNFirst{
+        position: fixed;
+        background-color: inherit;
+        width: 136%;
+    }
+    #sNMain{
+        margin-top: 70px;
+    }
+
+
+
+    .asbomr{
+        margin: 5px 0px !important;
+    }
+    .fmasbo{
+        margin: 0px;
+    }
+    .fmasboself{
+        width: 120px;
+        height: 30px;
+        border: 2px solid slategrey;
+        margin: 12px 10px 0px 0px;
+        border-radius: 20px;
+    }
+    .fmasboselftext{
+        font-size: 4.5vw;
+        margin: 5px 0px 0px 24px;
+    }
+    .profilemain{
+        height: fit-content;
+        width: 100%;
+    }
+    .uands{
+        margin: 0px !important;
+    }
+    .coverpp{
+        height: 150px;
+        width: 99%;
+        margin: 0px 0px 10px 1.5px;
+        border-radius: 10px;
+        box-shadow: 1px 0px 6px 0px #b5b5b5;
+    }
+    .cppm{
+        height: 100%;
+        width: 100%;
+        opacity: .7;
+    }
+    .pp{
+        height: 110px;
+        width: 110px;
+        margin: -70px 0px 10px 10px;
+        border-radius: 50%;
+        box-shadow: 1px 0px 6px 0px #b5b5b5;
+    }
+    .ppm{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        position: relative;
+    }
+    .pccam{
+        font-size: 6vw !important;
+        float: left;
+        position: absolute;
+        margin: 60px 0px 0px -40px;   
+    }
+    .pcam{
+        font-size: 6.5vw !important;
+        float: right;
+        z-index: 3000;
+        position: relative;
+        margin: -45px 15px 0px 0px;
+    }
+    .usname{
+        height: fit-content;
+        margin: 0px 0px 0px 10px;
+    }
+    .unmain{
+        font-size: 4vw;
+        margin: 5px 0px 5px 0px;
+        color: slategrey;
+    }
+    .unmainn{
+        font-size: 5vw;
+        margin: 15px 0px 0px 0px;
+    }
+    .pmhib{
+        height: 40px;
+        width: 100%;
+        margin: -52px 0px 0px 0px;
+    }
+    .bc{
+        text-align: center;
+    }
+    .cnum{
+        font-size: 5vw;
+        margin: 0px;
+    }
+    .ctext{
+        font-size: 4vw;
+        margin: 5px 0px 0px 0px;
+        color: slategrey;
+    }
+    .pd{
+        margin: -5px 0px 5px 0px;
+    }
+    .pd2{
+        margin: -10px 0px 5px 0px;
+    }
+    .pnav{
+        text-align: center;
+    }
+    .epn{
+        border-right: 1px solid slategrey;
+        height: 25px;
+        margin: 5px 0px -10px 0px;
+    }
+    .epn2{
+        height: 25px;
+        margin: 5px 0px -10px 0px;
+    }
+    .epni{
+        font-size: 5.5vw !important;
+        transition: font-size 1.2s, margin 1.2s;
+        width: 100%;
+    }
+    .select{
+        font-size: 7.5vw !important;
+        margin: -5px 0px 0px 0px;
+    }
+    .cmbody{
+        height: fit-content;
+        width: 100%;
+        margin: -4px 0px 0px 0px;
+        background-color: #77889929;
+    }
+    .errordiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .edt{
+        display: inline-block;
+        font-size: 5vw;
+    }
+    .epmb{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        margin: -15px 0px 0px 0px;
+    }
+    .erptext{
+        margin: 0px 0px 10px 0px;
+    }
+    .epts{
+        font-size: 4vw;
+        margin: 30px 0px 0px 0px;
+    }
+    .epts2{
+        font-size: 4vw;
+    }
+    .erpp{
+        height: 150px;
+        width: 200px;
+    }
+    .shbodyfull{
+        width: 100%;
+        height: fit-content;
+        min-height: 700px;
+    }
+    .streamdata{
+        text-align: center;
+        margin: 10px 0px 0px 0px;
+    }
+    .stdn{
+        font-size: 8vw;
+        margin: 0px 0px 0px 0px;
+    }
+    .stdni{
+        font-size: 10vw !important;
+        margin: 5px 0px 0px 0px;
+    }
+    .stdad{
+        font-size: 5vw;
+        margin: 0px 0px 10px 0px;
+        color: slategrey;
+    }
+    .recentstreams{
+        height: fit-content;
+        width: 100%;
+    }
+    .rssec{
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+    .rsst{
+        font-size: 4.5vw;
+    }
+    .rcshc{
+        width: 100%;
+        height: fit-content;
+        margin: 0px;
+    }
+    .rsimg{
+        margin: 10px 0px 0px 0px;
+    }
+    .rsimgself{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .rsdet{
+        margin: 0px;
+    }
+    .rssn{
+        font-size: 3.75vw;
+        margin: 15px 0px 0px 0px;
+        text-transform: capitalize;
+        padding: 0px 0px 0px 10px;
+    }
+    .rsan{
+        font-size: 3.5vw;
+        margin: 5px 0px 0px 0px;
+        text-transform: capitalize;
+        color: slategrey;
+        padding: 0px 0px 0px 13px;
+    }
+    .eocrs{
+        width: 90%;
+        height: 75px;
+        margin: 0px 0px 0px 5%;
+    }
+    .rsdt{
+        font-size: 3vw;
+        margin: 10px 0px 0px 0px;
+        color: slategrey;
+        float: right;
+    }
+    
+    .usnameasbo{
+        margin: -10px 0px 0px 10px;
+    }
+    .pasbobm{
+        width: 100%;
+        height: fit-content;
+    }
+    .pasnav{
+        text-align: center;
+    }
+    .pasboens{
+        border-right: 1px solid slategrey;
+        height: 30px;
+        margin: 5px 0px -10px 0px;
+    }
+    .pasboens2{
+        height: 30px;
+        margin: 5px 0px -10px 0px;
+    }
+    .pifasbo{
+        font-size: 4vw;
+        transition: font-size 1.2s, margin 1.2s;
+        width: 100%;
+    }
+    .mpbody{
+        width: 100%;
+        height: fit-content;
+    }
+    .candimg{
+        height: fit-content;
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+    }
+    .mpt{
+        font-size: 5vw;
+    }
+    .mppic{
+        height: 200px;
+        width: 200px;
+        z-index: 1000;
+        opacity: 1;
+        position: relative;
+    }
+    .mppic1{
+        height: 170px;
+        width: 70px;
+        margin: 0px -20px 15px 0px;
+        z-index: 300;
+        opacity: .7;
+    }
+    .mppic2{
+        height: 170px;
+        width: 70px;
+        margin: 0px 0px 15px -20px;
+        z-index: 300;
+        opacity: .7;
+    }
+    .mpcon{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        padding: 0px 0px 0px 75px;
+    }
+    .mpeb{
+        height: 80px;
+        width: 80px;
+        background-color: ;
+        float: left;
+        margin: 0px 15px 0px 15px;
+        border-radius: 50%;
+    }
+    .mpeb1{
+        height: 50px;
+        width: 50px;
+        background-color: ;
+        float: left;
+        border-radius: 50%;
+        margin: 15px 0px 0px 0px;
+    }
+    .mpeb2{
+        height: 50px;
+        width: 50px;
+        background-color: ;
+        float: left;
+        border-radius: 50%;
+        margin: 15px 0px 0px 0px;
+    }
+    .mpebim{
+        font-size: 15vw !important;
+        margin: 12px 0px 0px 0px;
+    }
+    .mpebi{
+        font-size: 8vw !important;
+        margin: 11px 0px 0px 0px;
+    }
+    .playcom{
+        width: 100%;
+        height: fit-content;
+    }
+    .epcom{
+        width: 90%;
+        height: 40px;
+        margin: 10px 0px 0px 5%;
+    }
+    .plcount{
+        font-size: 5vw;
+        margin: 5px 0px 0px 0px;
+    }
+    .plsan{
+        font-size: 5vw;
+        margin: 5px 0px 0px 0px;
+    }
+    .plrem{
+        font-size: 5vw;
+        margin: 5px 0px 0px 0px;
+    }
+    .prd{
+        width: 90%;
+        margin: 0px 0px 0px 5%;
+    }
+    .addpla{
+        height: 40px;
+        width: 100%;
+    }
+    .apicon{
+        float: right;
+        margin: 5px 20px 0px 0px;
+        font-size: 8vw !important;
+    }
+    .searchbody{
+        width: 100%;
+    }
+    .searchnav{
+        text-align: center;
+        height: 43px;
+        position: fixed;
+        margin: 45px 0px 0px 0px;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid darkgrey;
+        z-index: 100;
+    }
+    .esnb{
+        transition: border-bottom .5s;
+    }
+    .esnbt{
+        font-size: 4vw;
+    }
+    .se{
+        border-bottom: 3px solid darkgrey;
+    }
+    .searchresult{
+        width: 100%;
+        height: fit-content;
+    }
+    .srb{
+        overflow-y: scroll;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        padding: 90px 0px 0px 0px;
+    }
+    .searchbox{
+        width: 100%;
+        height: 45px;
+        margin: 0px 0px 0px 0px;
+        position: fixed;
+        background-color: white;
+        z-index: 400;
+    }
+    .sbform{
+        width: 80%;
+        margin: 0px 0px 0px 10%;
+    }
+    .sbfbox{
+        border-radius: 3px !important;
+        padding: 0px 0px 0px 10px !important;
+        font-family: MTNBrighterSans-Regular;
+        font-size: 4.2vw !important;
+    }
+    .sbfbox:focus{
+        border-bottom: 1px solid slategray !important;
+        box-shadow: 0 1px 0 0 slategrey !important;
+    }
+    .trcard{
+        height: 250px;
+    }
+    .trfront{
+        width: 80%;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        height: inherit;
+        flex-wrap: wrap;
+    }
+    .trft{
+        text-align: center;
+        width: 100%;
+    }
+    .trftself{
+        margin: 0px 0px 0px 0px;
+        font-size: 5vw;
+    }
+    .trftrank{
+        margin: 10px 0px 0px 0px;
+        font-size: 5vw;
+        color: slategrey;
+    }
+    .trfront, .trback{
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear;
+    }
+    .trfront{
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .trback{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .trback-content{
+        text-align: center;
+        width: 100%;
+    }
+    .trcard:hover > .trfront{
+        transform: perspective(600px) rotateY(-180deg);
+    }
+    .trcard:hover > .trback{
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .topbodyfull{
+        height: fit-content;
+        min-height: 600px;
+        width: 100%;
+    }
+    .eachtopr{
+        width: 80%;
+        height: 260px;
+        margin: 10px 0px 10px 10%;
+        border-radius: 10px;
+        box-shadow: 1px 0px 6px 0px #b5b5b5;
+    }
+    .trfimg{
+        height: 170px;
+        width: 200px;
+        margin: 0px 0px 10px 0px;
+        border-radius: 10px;
+    }
+    .srbmq{
+        height: fit-content;
+        width: 90%;
+        margin: 0px 0px 0px 5%;
+    }
+    .selfimgsr{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .selfimgcontainer{
+        padding: 0px !important;
+    }
+    .srow{
+        margin: 5px 0px 0px 0px !important;
+    }
+    .srtsn{
+        font-size: 4.5vw;
+        margin: 5px 0px 0px 0px;
+        text-align: left;
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .srtfn{
+        font-size: 3vw;
+        margin: 5px 0px 0px 5px;
+        text-align: left;
+        color: slategray;
+    }
+    .albmargin{
+        margin-top: 10px !important;
+    }
+    .srtan{
+        font-size: 3.5vw;
+        margin: 5px 0px 0px 5px;
+        text-align: left;
+        color: slategray;
+    }
+    .srtana{
+        font-size: 3.2vw;
+        margin: 5px 0px 0px 0px;
+        text-align: left;
+        color: slategray;
+    }
+    .selfimgsram{
+        height: 50px;
+        width: 30px;
+        position: relative;
+        margin: 0px -5px 0px -5px;
+    }
+    .selfimgsra1{
+        height: 40px;
+        width: 10px;
+        margin: 0px 0px 5px -15px;
+        opacity: .5;
+    }
+    .selfimgsra2{
+        height: 40px;
+        width: 10px;
+        margin: 0px -15px 5px 0px;
+        opacity: .5;
+    }
+    .edpfs{
+        height: fit-content;
+        width: 100%;
+        margin: 0px 0px 0px 0px !important;
+        text-align: left;
+    }
+    .edpf{
+        font-size: 3.5vw;
+        color: slategray;
+        margin: 0px 10px 0px 0px;
+        float: left;
+    }
+    .edps{
+        font-size: 3.5vw;
+        color: slategray;
+        margin: 5px 0px 0px 0px;
+    }
+    .bottom_nav{
+        bottom: 0;
+        position: sticky;
+        height: 50px;
+        width: 100%;
+        background-color: gainsboro;
+        z-index: 100;
+    }
+    .b_nav_content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bnc_item{
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+    }
+    .bnci_text{
+        margin: 0px;
+        font-size: 3vw;
+    }
+    .bnci_text_Img{
+        margin: 0px 0px 2px 0px;
+        font-size: 3vw;
+    }
+    .bnci_text_mI{
+        margin: 0px 0px 5px 0px !important;
+        font-size: 3vw;
+    }
+    .bnci_icon_fA{
+        font-size: 4.5vw;
+        padding: 5px;
+    }
+    .bnci_icon_mI{
+        font-size: 5vw !important;
+    }
+    .bnci_img{
+        width: 30px;
+        height: 26px;
+        border-radius: 50%;
+        margin: 0px 0px -4px 0px;
+    }
+    .toprankartistdetails{
+        margin: 10px 0px 0px 10px;
+        text-align: center;
+    }
+    .trback{
+        width: 80%;
+        height: 260px;
+    }
+    .traname{
+        font-size: 5vw;
+    }
+    .asicon{
+        height: 50px;
+    }
+    .asiconself{
+        font-size: 10vw;
+        padding: 10px 20px 0px 20px;
+    }
+    .servermfull{
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+        padding: 5px 0px 5px 10%;
+        transition: display .1s;
+    }
+    .servermsg{
+        width: 90%;
+        height: 40px;
+        font-size: 3.2vw;
+        color: whitesmoke;
+        border-radius: 20px;
+        padding: 10px 0px 0px 0px;
+    }
+    .positive{
+        background-color: green;
+    }
+    .negative{
+        background-color: red;
+    }
+    .lbht{
+        text-align: center;
+        margin: 20px 0px 10px 0px;
+        font-size: 5vw;
+    }
+    .loginbody{
+        min-height: 440px;
+    }
+    .logform{
+        text-align: center;
+        margin: 39px 0px 57px 10%;
+        width: 80%;
+    }
+    .lfself{
+        margin: 30px 0px 20px 0px;
+    }
+    .logformbtn{
+        height: 40px;
+        width: 250px;
+        border-radius: 10px;
+        border: none;
+        background-color: lightslategrey;
+        font-size: 4.5vw;
+    }
+    .logformbtn:focus{
+        background-color: lightslategrey !important;
+    }
+    .lfn{
+        font-size: 4vw !important;
+        color: slategray !important;
+        margin: 0px 0px 0px -10px;
+
+    }
+    .lfb:focus{
+        border-bottom: 1px solid slategray !important;
+        box-shadow: 0 1px 0 0 slategrey !important;
+    }
+    .lfb{
+        margin: 0px 0px 17px 0px !important;
+    }
+    .lfei{
+        margin: -40px 0px 0px 0px;
+        float: right;
+        z-index: 3000;
+        position: relative;
+    }
+    .ca{
+        text-align: center;
+        margin: 0px !important;
+    }
+    .orstate{
+        font-size: 5vw;
+        margin: -30px 0px -20px 0px;
+    }
+    .cacct{
+        font-size: 4.5vw;
+        margin: 10px 0px 30px 0px;
+    }
+    .ecover, .edp{
+        height: 150px;
+        width: 80%;
+        position: fixed;
+        background-color: yellow;
+        z-index: 40000;
+        margin: 100px 0px 0px 10%;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .ecque{
+        font-size: 5vw;
+        margin: 40px 0px 30px 10px;
+    }
+    .ecopt{
+        margin: 10px 0px 0px 0px;
+    }
+    .ecrp{
+        height: 35px;
+        width: 120px;
+        background-color: red;
+        margin: -5px 0px 0px 10px;
+        border-radius: 5px;
+        float: left;
+    }
+    .eccp{
+        height: 35px;
+        width: 120px;
+        background-color: green;
+        margin: -5px 5px 0px 20px;
+        border-radius: 5px;
+        float: left;
+        color: black;
+    }
+    .removeicon{
+        float: right;
+        margin: 5px;
+    }
+    .erpti{
+        font-size: 5vw !important;
+        float: left;
+        margin: 7px 10px 0px 7px;
+    }
+    .ecpti{
+        font-size: 5vw !important;
+        float: left;
+        margin: 7px 10px 0px 7px;
+    }
+    .ecpt, .erpt{
+        float: right;
+        font-size: 4vw;
+        margin: 10px 15px 0px 0px;
+    }
+
+    @media (max-width: 360px) {
+        .pEtext{
+            font-size: 4.2vw;
+            color: white;
+            padding: 10px 0px;
+            margin: 0px;
+        }
+        .ecpt, .erpt{
+            float: right;
+            font-size: 4vw;
+            margin: 10px 20px 0px 0px !important;
+        }
+        .erptid{
+            font-size: 7vw !important;
+            float: left;
+            margin: 5px 10px 0px 7px;
+        }
+        .ecover, .edp{
+            height: 150px;
+            width: 80%;
+            position: fixed;
+            background-color: yellow;
+            z-index: 40000;
+            margin: 100px 0px 0px 10%;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .ecque{
+            font-size: 5vw;
+            margin: 30px 0px 30px 20px;
+        }
+        .eccp{
+            height: 35px;
+            width: 120px;
+            background-color: green;
+            margin: 0px 0px 0px 10px;
+            border-radius: 5px;
+            float: left;
+            color: black;
+        }
+        .ecrp{
+            height: 35px;
+            width: 120px;
+            background-color: red;
+            margin: 0px 0px 0px 10px;
+            border-radius: 5px;
+            float: left;
+        }
+        .abmain{
+            text-align: center;
+            margin: 30px 0px 0px 20px !important;
+        }
+        .vcol{
+            margin: 0px 20px 0px 40px;
+        }
+        .floataddiconnew{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: ivory;
+            bottom: 90px !important;
+            right: 10px;
+            position: fixed;
+        }
+        .faiselfnew{
+            color: black;
+            padding: 7px 0px 0px 7px;
+            font-size: 7vw !important;
+        }
+        .loop_all{
+            font-size: 3vw;
+            position: absolute;
+            margin: -16px 0px 0px 10px;
+        }
+        .red_dot{
+            height: 5px;
+            width: 5px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            margin: -25px 0px 0px 52px !important;
+        }
+        .red_dot_adv{
+            height: 7px;
+            width: 7px;
+            margin: -27px 0px 0px 53px !important;
+        }
+        .premiumErrorContainer{
+            width: 100%;
+            height: fit-content;
+            position: fixed;
+            z-index: 1;
+        }
+        .premiumError{
+            margin: 5px 0px;
+            height: 40px;
+            width: 90%;
+            border-radius: 20px;
+            background-color: midnightblue;
+            text-align: center;
+            opacity: 0;
+            transition: all .5s;
+            z-index: 100;
+        }    
+        .internetStatus{
+            height: 55px;
+            width: 90%;
+            margin: 5px 0px 0px 5%;
+            border-radius: 20px;
+            background-color: midnightblue;
+            position: fixed;
+            text-align: center;
+        }  
+        .pubimgsra1{
+            width: 23px !important;
+        }
+        .pubimgsram{
+            width: 40px !important;
+        }
+        .pubimgsra2{
+            width: 23px !important;
+        }
+        .stateicon{
+            color: white;
+            padding: 11px 0px 0px 45px;
+            float: left;
+            font-size: 7.5vw !important;
+        }
+        .options{
+            position: absolute;
+            background: whitesmoke;
+            margin: -175px 0px -100px -140px;
+            border-radius: 10px 10px 0px 10px;
+            opacity: 0;
+            transition: opacity .5s, height .5s, width .5s;
+        }
+        .con2:hover > .options{
+            opacity: 1;
+            height: 170px;
+            width: 150px;
+        }
+    }
+
+    @media (min-width: 380px) {
+        .tst{
+            font-size: 4.5vw !important;
+        }
+        .uefbtn{
+            margin: 5px 0px 10px 70px !important;
+        }
+        .loadertop{
+            transform-origin: 32.5% 48.5% !important;
+        }
+        .uploadeditform{
+            min-height: 235px !important;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .loadertop{
+            transform-origin: 37.5% 48.5% !important;
+        }
+    }
+
+    @media (max-width: 325px) {
+        .tst{
+            font-size: 4.5vw !important;
+        }
+        .uefbtn{
+            margin: 5px 0px 10px 27px !important;
+        }
+        .loadertop{
+            transform-origin: 41.5% 48.5% !important;
+        }
+        .loaderbody{
+            margin: 0px 0px 0px 17% !important;
+        }
+        .pcount{
+            margin: -135px 0px 0px 140px !important;
+        }
+    }
+
+    .epicnorm{
+        display: none !important;
+    }
+    .erptid{
+        font-size: 6.3vw !important;
+        float: left;
+        margin: 5px 5px 0px 7px;
+    }
+    .preloader_circle{
+        height: 25px;
+        width: 25px;
+        float : left;
+        margin : 5px 0px 0px 5px;
+        border-radius: 50%;
+
+        border-right: 3px dotted #0000002b;
+        border-left: 3px dotted #000000b0;
+        border-top: 3px dotted black;
+        border-bottom: 3px dotted #00000073;
+
+        animation: load .5s infinite linear;
+    }
+    .preloader_mod{
+        border-right: 2px dotted #0000002b;
+        border-left: 2px dotted #000000b0;
+    }
+    .preloader_circle_fit{
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 10px 0px !important;
+    }
+    .make_white{
+        border-color: whitesmoke !important;
+    }
+    @keyframes load{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(359deg);
+        }
+    }
+    .customErrorContainer{
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+        z-index: 1;
+    }
+    .customerror{
+        margin: 5px 0px;
+        height: 40px;
+        width: 90%;
+        border-radius: 10px;
+        background-color: red;
+        text-align: center;
+        z-index: 9999;
+        padding: 2.5px 0px;
+    }
+    .cEtext{
+        font-size: 3.5vw;
+        padding: 10px 0px;
+        margin: 0px;
+        color: white;
+    }
+    .ceani{
+        animation: shake .5s 1 linear;
+    }
+    .floataddicon{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: ivory;
+        bottom: 60px;
+        right: 10px;
+        position: fixed;
+    }
+    .faiself{
+        color: black;
+        padding: 7px 0px 0px 7px;
+        font-size: 7vw !important;
+    }
+    .floataddiconnew{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: ivory;
+        bottom: 130px;
+        right: 10px;
+        position: fixed;
+    }
+    .faiselfnew{
+        color: black;
+        padding: 7px 0px 0px 7px;
+        font-size: 7vw !important;
+    }
+    .addbody{
+        height: 370px;
+        width: 80%;
+        background-color: slategrey;
+        z-index: 10000;
+        border-radius: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .asclear{
+        font-size: 5vw;
+        float: right;
+        margin: 5px;
+    }
+    .abmain{
+        text-align: center;
+        margin: 30px 0px 0px 9%;
+    }
+    .abmtext{
+        font-size: 4.7vw;
+    }
+    .asbum{
+        height: 130px;
+        width: 250px;
+        margin: 20px 0px 0px 0px;
+        border: 1px solid white;
+        padding: 12px 0px 0px 0px;
+    }
+    .asbumi{
+        font-size: 13vw !important;
+        margin: 10px 0px 0px 0px;
+    }
+    .asbumt{
+        font-size: 4.5vw;
+        margin: 5px 0px 0px 0px;
+    }
+    .umusic{
+        color: black;
+    }
+    .umusicerror{
+        width: 90%;
+        background-color: red;
+        margin: 10px 0px 0px 0px;
+        border-radius: 20px;
+        font-size: 4vw;
+        color: white;
+    }
+    .uploadmainbody{
+        height: fit-content;
+        width: 100%;
+    }
+    .uploadloader{
+        height: 270px;
+        width: 100%;
+    }
+    .loaderbody{
+        height: 80%;
+        position: relative;
+        margin: 0px 0px 0px 22%;
+        width: 78%;
+    }
+    .loaderunder, .loadertop{
+        cx: 105;
+        cy: 105;
+        r: 90;
+    }
+    .loaderunder{
+        stroke: lightblue;
+        fill: none;
+    }
+    .loadertop{
+        stroke: #130076;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 1000;
+        transition: all .25s;
+        fill: none;
+        transform: rotate(-90deg);
+        transform-origin: 36.5% 48.5%;
+    }
+    .pcount{
+        position: absolute;
+        margin: -135px 0px 0px 165px;
+    }
+    .pcint{
+        float: left;
+        margin: 0px;
+        font-size: 10vw;
+        font-weight: lighter;
+    }
+    .pcdec{
+        float: left;
+        margin: 0px;
+        font-size: 4vw;
+        font-weight: lighter;
+        margin: 19px 0px 0px 0px;
+    }
+    .uploadSpeed{
+        position: absolute;
+        margin: -133px 0px 0px -13px;
+        width: 100%;
+        text-align: center;
+    }
+    .speedText{
+        font-size: 3.5vw;
+        margin-top: 60px;
+    }
+    .trackself{
+        color: white !important;
+        height: 40px !important;
+        width: fit-content;
+        background-color: #130076 !important;
+    }
+    .tsi{
+        float: left;
+        margin: 5px 0px 0px 0px;
+        font-size: 8vw !important;
+    }
+    .tst{
+        margin: 10px 0px 0px 10px;
+        font-size: 5vw;
+        width: 220px;
+    }
+    .urow{
+        margin: 10px 0px 10px 0px;
+    }
+    .uploadeditform{
+        height: fit-content;
+        width: 100%;
+        min-height: 175px;
+    }
+    .ueftext{
+        text-align: center;
+        font-size: 4vw;
+    }
+    .uefmain{
+        height: fit-content;
+        width: 100%;
+    }
+    .uefimgsec{
+        height: 200px;
+        width: 100%;
+    }
+    .isself{
+        height: 170px;
+        width: 80%;
+        margin: 0px 0px 0px 10%;
+    }
+    .ccasec{
+        position: absolute;
+        text-align: center;
+        width: 50%;
+        margin: -46.5px 0px 0px 25%;
+        background-color: #130076;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .ccasicon{
+        font-size: 6vw !important;
+        color: white;
+        float: left;
+        margin: 10px 10px 0px 10px;
+    }
+    .ccastext{
+        font-size: 4vw;
+        color: white;
+        float: left;
+    }
+    .uefbtn{
+        height: 35px;
+        width: 270px;
+        margin: 5px 0px 10px 50px;
+        background-color: #130076;
+        border: 1px;
+        border-radius: 10px;
+        font-size: 5vw;
+        color: white;
+        font-family: roboto, MTNBRighterSans-Regular;
+    }
+    .view{
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        margin: 15px 0px 0px 0px;
+    }
+    .vcol{
+        margin: 0px 30px 0px 30px;
+    }
+    .vcolopt{
+        font-size: 4.5vw !important;
+        color: black;
+    }
+    .vcolopt::before{
+        border: 2px solid darkslategray !important;
+    }
+    .vcolopt::after{
+        border: 2px solid darkslategray !important;
+        background-color: darkslategray !important;
+    }
+    .uefdes{
+        margin: 10px 0px 0px 10%;
+        width: 80%;
+    }
+    .textareaforuef{
+        height: 150px !important;
+        padding: 10px !important;
+        border: 1px solid slategrey !important;
+        font-family: roboto, MTNBRighterSans-Regular;
+        font-size: 4.3vw !important;
+    }
+    .uefasn{
+        width: 80%;
+        margin: 0px 0px 0px 10%;
+    }
+    .uefbl:focus, .nrfnb:focus{
+        border-bottom: 1px solid slategray !important;
+        box-shadow: 0 1px 0 0 slategrey !important;
+    }
+    .uefbt{
+        margin: 0px 0px 0px -10px !important;
+    }
+    .uefbt{
+        font-size: 4.2vw !important;
+    }
+    .nmi{
+        margin: 0px !important;
+        width: 43% !important;
+    }
+    .nrfnb{
+        margin: 0px 10px 0px 28px !important;
+    }
+    .nrfn{
+        margin: 0px 10px 0px 28px !important;
+        font-size: 4.3vw !important;
+    }
+    .bdmstext{
+        font-size: 4vw !important;
+        margin: 0px 0px 0px 5px;
+    }
+    .bdms{
+        width: 145px;
+        height: 40px;
+        margin: 5px 0px 0px 0px;
+    }
+    .bdms:focus, .bdms:active{
+        border-color: slategrey;
+        outline: slategrey;
+    }
+    .bdmstextt{
+        font-size: 4vw !important;
+        margin: 0px 0px 0px 30px;
+    }
+    .bdmss{
+        width: 145px;
+        height: 40px;
+        margin: 5px 0px 0px 27px;
+    }
+    .bdmss:focus, .bdmss:active{
+        border-color: slategrey;
+        outline: slategrey;
+    }
+    .trackm{
+        display: flex;
+        justify-content: center;
+    }
+    .focus{
+        border-bottom: 1px solid slategray !important;
+        box-shadow: 0 1px 0 0 slategrey !important;
+    }
+    .zerosearch{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        font-size: 5vw;
+        color: slategrey;
+    }
+    .preloader_circle_white{
+        height: 25px;
+        width: 25px;
+        float: left;
+        margin: 7px 10px 0px 5px;
+        border-radius: 50%;
+        border-right: 3px dotted #ffffff38;
+        border-left: 3px dotted #ffffffbf;
+        border-top: 3px dotted white;
+        border-bottom: 3px dotted #ffffff5c;
+        animation: load .5s infinite linear;
+    }
+    .pubodyfull{
+        height: fit-content;
+        width: 100%;
+        padding: 5px 0px;
+    }
+    .uedfull, .nedfull, .pedfull{
+        height: auto;
+    }
+    .pubodyself{
+        margin: 0px 0px 5px 0px !important;
+        height: fit-content;
+    }
+    .pubimg{
+        margin: 10px 10px 0px 10px;
+    }
+    .pubis{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    .pubinfo{
+        height: fit-content;
+        margin: 5px 0px;
+        padding: 0px !important;
+    }
+    .pubinfonames{
+        height: fit-content;
+        margin: 0px 0px 0px 10px;
+    }
+    .pubsn{
+        font-size: 4vw;
+        color: black;
+        margin: 5px 0px 0px 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .puban{
+        font-size: 3.5vw;
+        color: slategrey;
+        margin: 5px 0px 0px 0px;
+    }
+    .pubfeat{
+        font-size: 3.5vw;
+        color: slategrey;
+        margin: 5px 0px 0px 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .pubdel{
+        float: right !important;
+        margin: -30px 10px 0px 0px;
+    }
+    .spubdel{
+        float: right !important;
+        margin: 40px 10px 0px 0px;
+    }
+    .pubdeli{
+        font-size: 6vw !important;
+    }
+    .pubistream{
+        margin: 5px 5px 0px 0px !important;
+        width: fit-content;
+        float: left;
+    }
+    .pubisi{
+        font-size: 4vw !important;
+        margin: 0px 5px 0px 0px;
+        float: left;
+    }
+    .pubisnum{
+        margin: 0px !important;
+        font-size: 4vw;
+        float: left;
+    }
+    .pubilike{
+        margin: 3px 0px 0px 10px !important;
+        width: fit-content;
+        float: left;
+    }
+    .pubili{
+        font-size: 4.7vw !important;
+        margin: 0px 5px 0px 0px;
+        float: left;
+    }
+    .pubilnum{
+        margin: 1px 0px 0px 0px !important;
+        font-size: 4vw;
+        float: left;
+    }
+    .join{
+        background-color: lightslategray;
+    }
+    .joined{
+        color: white;
+    }
+    .sanchor{
+        color: black !important;
+    }
+    .svfull{
+        height: fit-content;
+        width: 100%;
+    }
+    .svimgsec{
+        margin: 10px 0px 10px 12.5%;
+    }
+    .sviself{
+        width: 85%;
+        height: 200px;
+    }
+    .svdet{
+        text-align: center;
+        margin: 5px 0px 5px 0px !important;
+    }
+    .svdsn{
+        font-size: 5.5vw;
+        margin: 10px 0px 5px 0px !important;
+    }
+    .svdan{
+        font-size: 4vw;
+        margin: 0px 0px 5px 0px !important;
+        color: slategray;
+    }
+    .svdfn{
+        font-size: 3.7vw;
+        margin: 0px 0px 5px 0px !important;
+        color: slategray;
+    }
+    .svcontrols{
+        text-align: center;
+        margin: 5px 0px 0px 0px;
+    }
+    .svcsr{
+        font-size: 13vw !important;
+        margin: 20px 0px 0px 5px !important;
+        position: absolute;
+    }
+    .svcsl{
+        font-size: 13vw !important;
+        margin: 20px 0px 0px -45px !important;
+        position: absolute;
+    }
+    .svcb{
+        font-size: 24vw !important;
+        margin: 0px 0px 0px 0px !important;
+    }
+    .svcbp{
+        font-size: 23vw !important;
+        margin: 0px 0px 0px 10px !important;
+    }
+    .svcexl{
+        font-size: 7vw !important;
+        margin: 32px 0px 0px -100px !important;
+        position: absolute;
+    }
+    .svcexr{
+        font-size: 7vw !important;
+        margin: 33px 0px 0px 70px !important;
+        position: absolute;
+        transition: all .2s;
+    }
+    .svcexr_new{
+        font-size: 6.5vw !important;
+        margin: 27px 0px 0px 65px !important;
+        position: absolute;
+        background: #0000ff9c;
+        border-radius: 50%;
+        color: white;
+        height: 35px;
+        width: 35px;
+        padding: 5px 0px 0px 1px;
+    }
+    .svnavrow{
+        margin: 0px !important;
+        text-align: center;
+    }
+    .svnc{
+        max-height: 40px;
+    }
+    .svnm{
+        border-right: 1px solid slategrey;
+        max-height: 40px;
+    }
+    .svnmi{
+        font-size: 9vw !important;
+        padding: 3px 0px 0px 0px !important;
+        transition: all .5s;
+    }
+    .svnci{
+        font-size: 6vw !important;
+        padding: 10px 0px 0px 0px !important;
+        transition: all .5s;
+    }
+    .pickm{
+        font-size: 11vw !important;
+    }
+    .pickc{
+        font-size: 7.5vw !important;
+    }
+    .svmain{
+        height: fit-content;
+        width: 100%;
+        overflow: auto;
+        background-color: #c0c0c0b8;
+    }
+    .svmainc{
+        text-align: center;
+        padding: 100px 0px 0px 0px;
+    }
+    .svmainm{
+        text-align: center;
+        padding: 100px 0px 100px 0px;
+    }
+    .svmmt, .svmct{
+        font-size: 5vw;
+    }
+    .svmct{
+        height: 160px;
+    }
+    .favandlike{
+        text-align: center;
+    }
+    .padd{
+        font-size: 8vw !important;
+        margin: 0px 0px 0px 20px !important;
+        color: black;
+    }
+    .padd_mod{
+        width: 25px !important;
+        margin: 0px 0px 0px 45px !important;
+    }
+    .padd_menu{
+        z-index: 10;
+        position: sticky;
+        height: 170px;
+        width: 100%;
+        background-color: black;
+        bottom: 50px;
+        opacity: 0.95;
+        transition: .5s;
+    }
+    .padd_wrapper{
+        width: 100%;
+        text-align: center;
+        transition: .5s;
+        overflow: scroll;
+    }
+    .pleft{
+        left: 0;
+    }
+    .pleftmod{
+        left: -500px;
+    }
+    .pright{
+        right: 0;
+    }
+    .prightmod{
+        width: 0px;
+    }
+    .padd_opt{
+        display: inline-block;
+        margin: 7px;
+        background-color: grey;
+        border-radius: 14px;
+    }
+    .padd_optt{
+        margin: 0px;
+        padding: 10px 20px;
+        color: whitesmoke;
+        font-size: 5vw;
+    }
+    .paddicon{
+        color: whitesmoke;
+        padding: 10px 10px 0px 10px;
+        float: right;
+    }
+    .paddicon2{
+        color: whitesmoke;
+        padding: 10px 10px 0px 10px;
+    }
+    .sec1{
+        transition: .5s;
+        width: 0%;
+        background-color: white;
+        height: 100%;
+        position: absolute;
+    }
+    .sec2{
+        width: 0%;
+        right: 0;
+        background-color: white;
+        height: 70%;
+        transition: .5s;
+        position: absolute;
+        bottom: 0;
+    }
+    .t1{
+        width: 100%;
+        height: 300px;
+    }
+    .t2{
+        width: 100%;
+        height: 300px;
+    }
+    .secForm{
+        padding: 10px;
+    }
+    .secTDiv{
+        flex: 3;
+    }
+    .top{
+        display: flex;
+    }
+    .secArtimg{
+        height: 120px;
+        width: 150px;
+        margin: 10px;
+        float: right;
+        border-radius: 5px;
+        flex: 2;
+    }
+    .secArticon{
+        position: absolute;
+        margin: 90px 0px 0px 120px;
+        color: whitesmoke;
+    }
+    .sectt1{
+        margin: 10px 0px 0px 0px;
+        font-size: 5.2vw;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .slfn{
+        font-size: 4.7vw !important;
+        color: slategray !important;
+        margin: 0px 0px 0px 0px;
+    }
+    .secdes{
+        margin: -10px 0px 0px 0px;
+        font-size: 4.7vw;
+        color: slategray;
+    }
+    .secD{
+        height: 100px;
+        padding: 5px;
+    }
+    .secsubicon{
+        float: right;
+        padding: 5px;
+        font-size: 8vw !important;
+        color: black;
+    }
+    .falir{
+        font-size: 8vw !important;
+        color: lightskyblue;
+    }
+    .falir_adv{
+        color: blue !important;
+    }
+    .falit{
+        font-size: 5vw;
+        margin: 0px -20px 0px -20px !important;
+    }
+    .waveform{
+        width: 75%;
+        margin: -25px 0px -25px 12%;
+        height: 64px !important;
+        overflow: hidden;
+    }
+    .line_px{
+        border-bottom: 1px solid gray;
+        width: 0.75%;
+        height: 1px;
+        display: inline-block;
+        margin: 0px !important;
+        padding: 0px !important;
+        transition: border .05s;
+    }
+    .line_ball{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: gray;
+        position: absolute;
+        margin: 8px 0px 0px -75%;
+        display: inline-block;
+        transition: margin .05s;
+    }
+    .wavepreloader{
+        
+    }
+    .mincount{
+        margin: 0px !important;
+    }
+    .mcleft{
+        padding: 6px 0px 0px 43px !important;
+        font-size: 5vw;
+    }
+    .mcright{
+        padding: 6px 43px 0px 95px !important;
+        font-size: 5vw;
+    }
+    .loop_one{
+        font-size: 3vw;
+        position: absolute;
+        margin: -18px 0px 0px 10px;
+    }
+    .loop_all{
+        font-size: 3vw;
+        position: absolute;
+        margin: -17.2px 0px 0px 10.5px;
+    }
+    .add_comment{
+        height: fit-content;
+        width: 100%;
+        background-color: whitesmoke;
+        margin: 0px !important;
+    }
+    .commentimg{
+        height: 40px;
+        width: 40px !important;
+    }
+    .commentimgself{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin: 5px 0px 0px 0px;
+    }
+    .sendcomment{
+        padding: 15px 0px 0px 20px !important;
+    }
+    .sciself{
+        font-size: 6vw !important;
+        color: black;
+    }
+    .cFmain{
+        padding: 0px 0px 0px 30px !important;
+    }
+    .cFinput{
+        padding: 0px 0px 0px 5px !important;
+    }
+    .cFinput:focus{
+        border-bottom: 1px solid lightslategray !important;
+        box-shadow: 0 1px 0 0 lightslategrey !important;
+    }
+    .realcca{
+        padding: 5px;
+        max-height: 450px;
+        min-height: 400px;
+        overflow: overlay;
+    }
+    .rceach{
+        margin: 0px 0px 0px 0px !important;
+    }
+    .rcimgself{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    .rcimgbody{
+        margin: 0px -20px 0px 0px;
+    }
+    .commbody{
+        background-color: white;
+        height: fit-content;
+        padding: 5px !important;
+        margin: 25px 0px 0px 0px;
+        border-radius: 0px 10px 10px 10px;
+        width: 75% !important;
+    }
+    .commtext{
+        font-size: 4vw;
+    }
+    .commsp{
+        text-align: right;
+        font-size: 4vw;
+        margin: 5px 5px 5px 0px;
+        color: slategrey;
+    }
+    .comTime{
+        font-size: 3.2vw;
+        color: slategrey;
+        text-align: right;
+        margin: 5px 0px 0px 0px;
+    }
+    .red_dot{
+        height: 5px;
+        width: 5px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        margin: -25px 0px 0px 55px;
+        transition: all .5s;
+    }
+    .red_dot_adv{
+        height: 7px;
+        width: 7px;
+        margin: -30px 0px 0px 55px;
+    }
+    .notbodyeach{
+        padding: 5px;
+        margin: 0px 0px 5px 0px !important;
+    }
+    .nbimgb{
+        margin: 5px -20px 0px 0px;
+    }
+    .nbimgself{
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+    }
+    .nbtb{
+        margin: -10px 0px 0px 0px !important;
+    }
+    .notTime{
+        float: right;
+        font-size: 3.5vw;
+        margin: 0px;
+        color: slategrey;
+    }
+    .nbts{
+        font-size: 3.9vw;
+    }
+    .del_not{
+        margin: 0px 0px 0px 15px !important;
+    }
+    .del_play{
+        margin: 10px 0px 0px 0px !important;
+    }
+    .mmamorebody{
+        height: fit-content;
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    .mmmtext{
+        text-align: center;
+        font-size: 5vw;
+        padding: 10px 0px 10px 0px;
+        background-color: silver;
+    }
+    .mmimg{
+        margin: 10px;
+    }
+    .mmimgself{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .mmameach{
+        margin: 0px !important;
+    }
+    .mmi{
+        margin: 25px 0px 0px 0px !important;
+    }
+    .mmiex{
+        margin: 25px 0px 0px 0px !important;
+    }
+    .mmpis{
+        font-size: 7.5vw !important;
+    }
+    .mmd{
+        margin: 0px !important;
+    }
+    .mmsn{
+        margin: 10px 0px 0px 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 4vw;
+    }
+    .mman{
+        font-size: 3.5vw;
+        margin: 5px 0px 0px 0px;
+        color: slategrey;
+    }
+    .mmfn{
+        font-size: 3.5vw;
+        margin: 5px 0px 5px 0px;
+        color: slategrey;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .song_sec{
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+    .lyrics_text{
+        font-size: 5vw;
+        line-height: 30px;
+    }
+    .lyrics_sec{
+        max-width: 100%;
+        max-height: 300px;
+        overflow: auto;
+        padding: 0px 20px 0px 10px;
+        text-align: end;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .showSec{
+        opacity: 1;
+    }
+    .removeSec{
+        opacity: 0;
+    }
+    .central{
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+    .central2{
+        text-align: center;
+        margin: 0px 0px 5px 0px;
+    }
+    .vSong{
+        font-size: 3.2vw;
+        float: right;
+        margin: 15px 10px 0px 0px;
+    }
+    .makeBlack{
+        color: black;
+        transition: color .7s;
+    }
+    .spinner {
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin: -3px 0px 10px 0px;
+    }
+    .spinner div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin: 8px;
+        border: 2px solid slategrey;
+        border-radius: 50%;
+        animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: slategrey transparent transparent transparent;
+    }
+    .spinner div:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+    .spinner div:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+    .spinner div:nth-child(3) {
+        animation-delay: -0.15s;
+    }
+    @keyframes spinner {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .ellPreloader {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 40px;
+    }
+    .ellPreloader div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: slategrey;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+    .ellPreloader div:nth-child(1) {
+        left: 8px;
+        animation: ellPreloader1 0.6s infinite;
+    }
+    .ellPreloader div:nth-child(2) {
+        left: 8px;
+        animation: ellPreloader2 0.6s infinite;
+    }
+    .ellPreloader div:nth-child(3) {
+        left: 32px;
+        animation: ellPreloader2 0.6s infinite;
+    }
+    .ellPreloader div:nth-child(4) {
+        left: 56px;
+        animation: ellPreloader3 0.6s infinite;
+    }
+    @keyframes ellPreloader1 {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes ellPreloader2 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(24px, 0);
+        }
+    }
+    @keyframes ellPreloader3 {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }  
+    .uSubi{
+        color: #130076;
+        font-size: 10vw !important;
+        margin: 2px 0px 0px 10px;
+    }
+    .premiumErrorContainer{
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+        z-index: 1
+    }
+    .premiumError{
+        margin: 5px 0px;
+        height: 40px;
+        width: 90%;
+        border-radius: 20px;
+        background-color: midnightblue;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        z-index: 100;
+    }    
+    .internetStatus{
+        height: 50px;
+        width: 90%;
+        margin: 5px 0px 0px 5%;
+        border-radius: 20px;
+        background-color: midnightblue;
+        position: fixed;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        z-index: 5000;
+    }
+    .stateicon{
+        color: white;
+        padding: 11px 0px 0px 45px;
+        float: left;
+        font-size: 6.5vw !important;
+    }
+    .statetext{
+        font-size: 4.3vw;
+        color: white;
+        margin: 17px 25px 0px 0px;
+    }
+    .pEtext{
+        font-size: 4.2vw;
+        color: white;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+    .fade{
+        opacity: 1;
+    }
+    .ualbumfirst{
+        height: 520px;
+        width: 100%;
+        z-index: 1000;
+    }
+    .uafcover{
+        padding: 10px 0px 0px 0px;
+        height: 150px;
+        width: 200px;
+        margin: 0px 0px 0px 23.5%;
+    }
+    .uafcself{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .uafci{
+        position: absolute;
+        margin: 100px 0px 0px -35px;
+        z-index: 1000;
+        color: silver;
+    }
+    .uafctext{
+        margin: 0px;
+        padding: 10px 0px 0px 0px;
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .uafdet{
+        margin: 20px 0px 0px 20px;
+    }
+    .decrfn{
+        margin: 2px 0px -26px -9px;
+    }
+    .albrow{
+        margin: 0px 0px 15px -10px !important;
+    }
+    .decmi{
+        width: 47.7% !important;
+    }
+    .ualbcreate{
+        padding: 15px 0px 0px 0px;
+        margin: 0px 20px 10px 0px;
+        background-color: red;
+        width: 150px;
+        height: 45px;
+        float: right;
+        border-radius: 5px;
+    }
+    .uacbi{
+        font-size: 10vw;
+        color: white;
+    }
+    .uacbtn{
+        margin: 0px 0px 0px 70% !important;
+    }
+    .uacbt{
+        margin: 0px 0px -19px -75px;
+        font-size: 4vw;
+    }
+    .decuefyear{
+        margin: 0px 0px 0px -5px !important;
+    }
+    .decbdms{
+        width: 160px !important;
+    }
+    .bdmsdect{
+        margin: 0px 0px 0px 5px !important;
+    }
+    .bdmsdec{
+        margin: 5px 0px 0px 0px;
+        width: 160px;
+    }
+    .decrfnemer{
+        font-size: 4vw !important;
+        padding: 0px 0px 0px 5px !important;
+    }
+    .ualbumfull{
+        height: fit-content;
+        width: 100%;
+    }
+    .uasecond{
+        min-height: 530px;
+        height: fit-content;
+        width: 100%;
+        margin: -20px 0px 0px 0px;
+    }
+    .uasalbumpart{
+        margin: 0px 0px 5px 0px !important;
+    }
+    .uasapimg{
+        height: 75px;
+        width: 75px;
+        margin: 10px 0px 0px 0px;
+    }
+    .albdet{
+        font-size: 5vw;
+        margin: 17px 0px 0px 0px;
+    }
+    .albdetan{
+        color: slategrey;
+        margin: 10px 0px 0px 5px;
+        font-size: 4.5vw;
+    }
+    .salbeditsec{
+        margin: 10px 0px 0px 0px;
+    }
+    .salbicone{
+        margin: 5px 0px 20px 0px;
+        color: black;
+    }
+    .salbicond{
+        color: red;
+    }
+    .albsaddtext{
+        font-size: 5vw;
+        color: slategrey;
+        margin: 0px;
+    }
+    .albsaddself{
+        text-align: center;
+    }
+    .albsadd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 300px;
+        margin: 5%;
+        border: 2px solid black;
+    }
+    .effects{
+        border-style: dotted !important;
+        border-width: 2px !important;
+        border-color: black !important;
+    }
+    .albsaddicon{
+        margin: 0px 0px 0px 0px;
+        color: slategrey;
+        font-size: 8vw !important;
+    }
+    .eachtrackbody{
+        height: fit-content;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+    .eachtrackself{
+        padding: 10px 0px;
+        margin: 10px 0px 10px 1% !important;
+        border-radius: 10px;
+        box-shadow: 1px 0px 6px 0px #b5b5b5;
+        width: 97%;
+        height: fit-content;
+        transition: all .5s;
+    }
+    .etno{
+        margin: 0px 5px;
+    }
+    .etnoself{
+        font-size: 4.5vw;
+    }
+    .etimg{
+        height: 75px;
+        margin: 0px 0px 0px -30px !important;
+    }
+    .etimgself{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .etdet{
+        margin: 0px;
+    }
+    .etsn{
+        font-size: 4vw;
+        margin: 10px 0px 5px -7px;
+    }
+    .etfn{
+        font-size: 4vw;
+        color: slategrey;
+        margin: 5px 0px 0px -7px;
+    }
+    .etdel{
+        margin: 0px;
+    }
+    .etdeld, .etdele{
+        font-size: 6.5vw !important;
+        margin: 5px 0px;
+    }
+    .etdeld{
+        color: red;
+        margin: 20px 0px 0px 5px;
+    }
+    .etdele{
+        color: orange;
+        margin: 0px 0px 0px 5px;
+    }
+    .etEditMenu{
+        height: 515px;
+        width: 100%;
+    }
+    .etdtextedit{
+        font-size: 4vw;
+        text-align: center;
+        margin: 7px 0px;
+    }
+    .sdivider{
+        margin: 10px 0px 0px 0px;
+    }
+    .eemmain{
+        margin: 5px 0px;
+    }
+    .eemimg{
+        height: 120px;
+        width: 100px;
+        margin: 0px;
+    }
+    .eemimgself{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .eemimgicon{
+        position: absolute;
+        margin: 80px 0px 0px -35px;
+        color: whitesmoke;
+    }
+    .uTif{
+        margin: 10px 0px !important;
+    }
+    .utifb:focus{
+        border-bottom: 1px solid lightslategray !important;
+        box-shadow: 0 1px 0 0 lightslategrey !important;
+    }
+    .utfselect{
+        margin: -15px 0px 0px 0px !important;
+    }
+    .utfseltext{
+        font-size: 4vw;
+        margin: 0px 0px 0px 5px;
+    }
+    .utifbl{
+        width: 95%;
+        margin: 0px 0px 0px 2.5%;
+    }
+    .utifbli:focus{
+        border-bottom: 1px solid lightslategray !important;
+        box-shadow: 0 1px 0 0 lightslategrey !important;
+    }
+    .utifblil{
+        margin: 0px 0px 0px -5px;
+    }
+    .utifbb{
+        width: 95%;
+        margin: 0px 0px 0px 2.5%;
+    }
+    .utifd{
+        height: 130px;
+        padding: 10px 10px;
+    }
+
+    .cover{
+        width: 100%;
+    }
+    .big{
+        width: fit-content;
+        height: 45px;
+        float: right;
+        border-radius: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 15px 10px 0px;
+        transition: width 1s;
+    }
+    .bigGreen{
+        background-color: green;
+    }
+    .bigRed{
+        background-color: red;
+    }
+    .smallUp{
+        padding: 0px 3px;
+    }
+    .small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0px;
+    }
+    .text{
+        margin: 0px 10px;
+        font-size: 4vw;
+        color: snow;
+    }
+    .icon{
+        font-size: 8vw !important;
+        color: darkslategrey;
+        margin: 0px;
+    }
+    .iconRed{
+        color: red !important;
+    }
+    .iconGreen{
+        color: green !important;
+    }
+    .floaterAlb{
+        width: 100%;
+        height: 55px;
+        bottom: 0;
+    }
+    .albFinish{
+        height: 50px;
+        min-width: 200px;
+        width: fit-content;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        float: right;
+        margin: 0px 5px 0px 0px !important;
+    }
+    .make_red{
+        background-color: red !important;
+    }
+    .smallerFont{
+        font-size: 4.3vw !important;
+    }
+    .albFText{
+        font-size: 5vw;
+        margin: 0px;
+        padding: 0px 5px 0px 10px;
+        color: white;
+    }
+    .albFicon{
+        font-size: 6vw !important;
+        margin: 0px 10px 2px 0px;
+        color: white;
+    }
+    .pubimgsra1{
+        height: 50px;
+        width: 25px;
+        opacity: .5;
+        margin: 0px -20px 2.5px 0px;
+    }
+    .pubimgsram{
+        height: 55px;
+        width: 45px;
+        position: relative;
+        margin: 0px -20px 0px 0px;
+        z-index: 10;
+    }
+    .pubimgsra2{
+        height: 50px;
+        width: 25px;
+        opacity: .5;
+        margin: 0px 0px 2.5px 0px;
+    }
+    .ssrow{
+        margin: 5px 0px 0px 5px !important;
+        padding: 0px !important;
+    }
+    .mmialb{
+        margin: 25px 0px 0px 0px !important;
+        padding: 0px !important;
+        width: inherit !important;
+    }
+    .swell{
+        animation: swell .5s 1 linear;
+    }
+    @keyframes swell{
+        from{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.25);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+    .individualTracks{
+        margin: 0px 0px 10px 10px !important;
+    }
+    .trackNo{
+        font-size: 4.5vw;
+        padding: 20px 0px 0px 0px !important;
+    }
+    .trackDet{
+        margin: 0px 0px 0px 14px !important;
+    }
+    .trackDetName{
+        font-size: 4.5vw;
+        margin: 10px 0px 0px -10px;
+    }
+    .trackDetFeat{
+        font-size: 3.5vw;
+        color: #928fba;
+        margin: 3px 0px 0px -5px;
+    }
+    .exAlbumBtn{
+        font-size: 7.5vw !important;
+        margin: 0px 0px 0px 5px !important;
+    }
+    .upsidedown{
+        transform: rotateZ(180deg);
+    }
+    .exAlbumSpeaker{
+        font-size: 7vw !important;
+        margin: 20px 0px 0px 0px;
+    }
+    .mmpise1{
+        margin: 0px 0px 0px -10px !important;
+    }
+    .mmpise2{
+        position: absolute;
+        margin: 2px 0px 0px 5px;
+    }
+    .sPL{
+        margin: 0px 10px 0px -10px !important;
+    }
+    .from_alb_text{
+        text-align: center;
+        font-size: 5vw;
+        margin: -15px 0px 0px 0px !important;
+    }
+    .clear_all_notification{
+        margin: 10px 0px 0px 0px;
+        text-align: center;
+    }
+    .clear_all_not_text{
+        font-size: 4vw;
+        margin: 0px;
+        padding-bottom: 7px;
+    }
+    .error_msg{
+        font-size: 4vw;
+        text-align: center;
+        margin: 20px 0px 0px 0px;
+    }
+    .specToggle{
+        margin: -8px 0px 0px 0px;
+        padding: 0px 15px 0px 0px;
+        font-size: 35px !important;
+        float: right;
+    }
+    .scsuccess{
+        height: 40px;
+        width: 85%;
+        margin: 10px 0px 10px 7.5%;
+        background-color: green;
+        border-radius: 10px;
+        font-size: 3.5vw;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+    }
+    .sec1error{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .sec1errortext{
+        font-size: 5vw;
+        display: inline-block;
+        text-align: center;
+    }
+    .playlistCon{
+        padding: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        min-height: calc(100%-50px);
+    }
+    .playImgs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .piLeft, .piRight{
+        height: 90px;
+        width: 100px;
+        opacity: .7;
+    }
+    .piMid{
+        z-index: 10;
+        height: 150px;
+        width: 200px;
+        margin: 0px -30px;
+    }
+    .pCData{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        padding: 0px 5px;
+        transition: all .3s;
+    }
+    .playRotate{
+        transform: rotateX(360deg);
+    }
+    .scaleDown{
+        transform: scale(0.9);
+    }
+    .pCName{
+        width: 90%;
+        font-size: 4.6vw;
+        margin: 0px;
+    }
+    .pCICon{
+        width: 10%;
+        font-size: 20px !important;
+    }
+    .stickMe{
+        height: 165px;
+        width: 100%;
+        background: white;
+        z-index: 100;
+        position: fixed;
+        left: 0;
+        display: flex;
+        place-content: center;
+        place-items: center;
+    }
+    .playContent{
+        margin: 165px 0px 0px 0px;
+    }
+    .playTitle{
+        margin: 0px 0px 10px 0px;
+        text-align: center;
+        font-size: 6vw;
+    }
+}
+
+
+@media (min-width: 460px) {
+    
+}
